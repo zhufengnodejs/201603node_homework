@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        body{
+            font-family: "微软雅黑";
+        }
+        nav.navbar,.navbar-inverse{
+            border-radius: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+        }
+        .page-header{
+            background: #43853d;
+            margin: 0;
+            overflow: hidden;
+            font-weight: bold;
+            color: white;
+        }
+        .page-header h1{
+            margin-left: 30px;
+        }
+        .page-header h1 small{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">前端沙龙</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Node.js<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <div class="page-header">
+        <h1>Node.js <small>Node.js知识整理</small></h1>
+    </div>
+</div>
+<div class="container" style="margin-top: 40px;">
+    <div class="panel panel-primary">
+        <div class="panel-heading">快速入门</div>
+        <div class="panel-body">
+            <div id="quick_container">
+                {{quick_start}}
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">进阶指南</div>
+        <div class="panel-body">
+            <div id="learn_nodejs">
+                {{learn_nodejs}}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
